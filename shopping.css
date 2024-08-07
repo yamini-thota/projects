@@ -1,0 +1,286 @@
+body{
+    background-color: #fff;
+
+}
+.pls{
+    background-color: black;
+    justify-content: space-between;
+    color:white;
+    display: flex;
+    padding: 10px;
+}
+.prblm{
+    display: flex;
+    
+}
+.prblm1{
+    display: flex;
+    list-style: none;
+    padding-right: 15px;
+    
+}
+.five{
+    
+   
+    list-style: none;
+}
+
+.prblm2{
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding: -100px;
+    margin: 0px;
+}
+.fix,.fix1,.fix2{
+    list-style: none;
+
+}
+
+.fix1,.fix{
+    display: flex;
+font-size: 25px;
+
+}
+.seven{
+    padding-left:20px;
+    font-size: 25px;
+    
+}
+.butt{
+    padding:0px 60px;
+    background-color: rgb(127, 127, 252);
+    border-radius: 100px;
+}
+.bottom{
+    padding-left: 30px;
+    font-size: 30px;
+    
+}
+.prblm4{
+    background: url("./images/latest-offer.png");
+    
+    background-position-y:150px;
+    
+    background-size: cover;
+    
+}
+.prblm4{
+    display: flex;
+    width:100%;
+}
+.prb1{
+    padding-left: 100px;
+    padding-top: 150px;
+}
+.prblm5{
+    padding-left: 300px;
+    padding-top:100px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+    margin: 15px;
+}
+.div5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.div5 h2 {
+    margin-left: 20px;
+}
+
+.div5 ul {
+    margin-right: 0px;
+}
+
+.sec3,
+.sec5,
+.sec7,
+.sec9,
+.sec11,
+.sec13 {
+    display: flex;
+    /* width:10px; */
+    margin-left: 30px;
+
+}
+
+.sec4,
+.sec6,
+.sec8,
+.sec10,
+.sec12,
+.sec14 {
+    margin-left: 60px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.main1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+    margin-left: 150px;
+
+}
+
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12 {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.calss0 {
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.diiv {
+    background: url("./images/card.png");
+    background-repeat: no-repeat;
+    background-position-y: 120px;
+    /* background-position-x ; */
+    margin: 150px 100px 0px 100px;
+    display: flex;
+}
+.diiv input{
+    color:white;
+    background-color:black;
+    padding: 0px 60px;
+    border-radius: 200px;
+}
+
+.diiv img {
+    padding-left: 190px;
+}
+.diiiv {
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+.section{
+    display: flex;
+}
+.sec{
+    display: flex;
+}
+.s,.so,.soo{
+    display: flex;
+}
+.seaa{
+    display: flex;
+margin-top: 150px;
+margin-left: 80px;
+}
+.ss,.sp,.see{
+    padding-left:150px;
+}
+
+.ss{
+    margin-top: 300px;
+}
+.see{
+    margin-top: 350px;
+}
+.sss{
+   padding-bottom: 120px; 
+}
+.s,.so,.soo{
+    padding-top:0px;
+    /* width:100%; */
+}
+.s,.so{
+    margin-bottom: 100px;
+}
+#id button{
+padding:15px 50px;
+border-radius: 20px;
+}
+.get{
+    display:flex;
+    
+background-image: url("./images/latest-offer.png");
+background-repeat: no-repeat;
+margin:100px 100px 50px 150px;
+}
+.namee{
+    margin: 50px  190px 0px 100px;
+    font-size:35px;
+}
+.ass{
+    margin: 150px 0px 0px 80px;
+  padding-left:50px;
+}
+.ass input{
+    padding:25px 60px;
+    border-radius: 30px;
+
+}
+.ass button{
+    padding:25px 50px;
+    border-radius: 30px;
+    background-color: #5757fc;
+}
+.main3{
+    display: flex;
+    margin: 130px 200px;
+/* font-size:30px; */
+/* padding: 50px; */
+}
+.method,.system,.secure{
+    padding:85px;
+    font-size: 25px;
+}
+.four{
+    font-size: 45px;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    /* margin:20px 100 0px 100px; */
+    margin:20px;
+}
+.achievers{
+    display:flex;
+    margin:100px 0px;
+    font-size: 25px !important;
+    width:100%;
+}
+.ex{
+    display:flex;
+    flex-direction: column;
+    font-size: 23px;
+    color: #9AA0A6;
+}
+.example,.example1,.example2,.example3{
+    width:25%;
+padding:40px;
+font-size: 23px;
+}
+footer{
+    display:flex;
+    color:#9AA0A6;
+    font-size: 20px;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+/* 0-------------------meedia queries ------------- */
+@media only screen and (min-width:768px){
+    .prblm2{
+        flex-wrap: wrap;
+    }
+}
