@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            border: 2px solid black;
+
+            padding: 50px;
+            margin: 100px 450PX;
+        }
+
+        input {
+            padding: 15px;
+            margin: 30px;
+        }
+
+        span {
+            display: none;
+            color: red;
+        }
+
+        #submit {
+            color: white;
+            background: rgb(77, 77, 209);
+            padding: 15px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <input type="text" id="fname" placeholder="Enter FirstName">
+        <span id="firstname">!..please enter your Firstname</span>
+
+
+        <input type="text" id="sname" placeholder="Enter SecondName">
+        <span id="secondname">! please enter your secondname</span>
+
+
+        <div class="div">
+            <textarea name="textarea" id="area" cols="56" rows="5" style="margin-left: 30px;">Address</textarea>
+            <span id="address">! please enter your Address</span>
+
+
+
+            <input type="number" id="buus" placeholder="Enter PhoneNumber">
+            <span id="ss">! please enter your Number</span>
+
+            <input type="text" id="qualify" placeholder="Enter Your Higher Qualification">
+            <span id="qualification">! please enter your Qualification</span>
+
+            <input type="email" id="mail" placeholder="example1223@gmail.com">
+            <span id="email">! please enter your mail id</span>
+
+            <input type="password" id="pass" placeholder="Enter Password">
+            <span id="pwd">! please enter your password</span>
+
+
+            <input type="button" value="Submit" id="submit" onclick="signIn()">
+        </div>
+
+    </section>
+
+
+    <script>
+        function signIn() {
+
+            let first = document.getElementById('fname').value;
+            if (first == '') {
+                document.getElementById('firstname').style.display = "block";
+            }
+            else {
+                document.getElementById('firstname').style.display = "none";
+
+            }
+
+            let second = document.getElementById('sname').value;
+            if (second == '') {
+                document.getElementById('secondname').style.display = "block";
+            }
+            else {
+                document.getElementById('secondname').style.display = "none";
+
+            }
+
+            let text = document.getElementById('area').value;
+            if (text == '') {
+                document.getElementById('address').style.display = "block";
+            }
+            else {
+                document.getElementById('address').style.display = "none";
+
+            }
+
+            let mobile = document.getElementById('buus').value;
+            if (mobile == '') {
+                document.getElementById('ss').style.display = "block";
+            }
+            else {
+                document.getElementById('ss').style.display = "none";
+
+            }
+
+            let quali = document.getElementById('qualify').value;
+            if (quali == '') {
+                document.getElementById('qualification').style.display = "block";
+            }
+            else {
+                document.getElementById('qualification').style.display = "none";
+
+            }
+
+            let mail = document.getElementById('mail').value;
+            if (mail == '') {
+                document.getElementById('email').style.display = "block";
+            }
+            else {
+                document.getElementById('email').style.display = "none";
+
+            }
+
+            let password = document.getElementById('pass').value;
+            if (password == '') {
+                document.getElementById('pwd').style.display = "block";
+            }
+            else {
+                document.getElementById('pwd').style.display = "none";
+
+            }
+
+
+        }
+        
+
+    </script>
+</body>
+
+</html>
