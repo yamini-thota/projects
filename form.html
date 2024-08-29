@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+
+            border: 2px solid black;
+            margin: 0 500px;
+            text-align: center;
+            padding: 20px;
+            width: 30%;
+            font-size: 20px;
+        }
+
+        input {
+            margin: 8px;
+            padding: 20px 60px;
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .para {
+            color: red;
+
+            display: none;
+        }
+        button{
+            background:rgb(101, 235, 101);
+            padding:30px 100px;
+            display: block;
+            /* align-items: center; */
+            margin:20px 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login Form</h1>
+    <section>
+        <!-- <input type="text" placeholder="Enter your Name" id="name">
+        <p id="pp" class="para">! Please enter your Firstname</p>
+
+        <input type="text" placeholder='Enter your surname' id="surname">
+        <p id="srname" class="para">! Please enter your Surname</p> -->
+
+        <input type="email" placeholder="Enter your email" id="email">
+        <p id="mail" class="para">! Please enter your Email</p>
+
+        <input type="password" placeholder="Enter your password" id="pass">
+        <p id="pwd" class="para">! Please enter your password</p>
+
+        <input type="button" value="Login" id="idd" style="background-color:rgb(121, 121, 246)" onclick="fun()">
+   
+        <a href="#">Forget Password</a>
+
+    </section>
+
+        <button><a href="http://127.0.0.1:5501/newAccount.html" target="_top">Create New Account</a></button>
+
+
+    <script>
+        function fun() {
+
+
+            let email = document.getElementById('email').value;
+
+            if (email == '') {
+                document.getElementById('mail').style.display = 'block';
+            }
+            else {
+                document.getElementById('mail').style.display = 'none';
+            }
+
+            let pass = document.getElementById('pass').value;
+
+            if (pass == '') {
+                document.getElementById('pwd').style.display = 'block';
+            }
+            else {
+                document.getElementById('pwd').style.display = 'none';
+            }
+            
+            let text="Are u completed to fill the datails";
+            confirm(text);
+        }
+                    
+       
+
+    </script>
+</body>
+
+</html>
