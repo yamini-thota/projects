@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            color: white;
+            background: #000;
+        }
+
+        button {
+            padding: 15px 55px;
+            font-size: 25px;
+            margin: 10px;
+        }
+
+        #parent {
+            border: 1px solid #000;
+            width: 84%;
+            padding: 25px;
+            padding-top: 20px;
+            margin-left: 103px;
+            grid-column: auto auto auto auto;
+        }
+
+        input {
+            padding: 40px 130px;
+            margin-left: 130px;
+        }
+
+        button:hover {
+            color: #000;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="Child"><br>
+    <div id="parent">
+        <button onclick="Display('1')">1</button>
+        <button onclick="Display('2')">2</button>
+        <button onclick="Display('3')">3</button>
+        <button onclick="operation('+')">+</button>
+        <button onclick="Clearr('C')">C</button>
+        <button onclick="Display('4')">4</button>
+        <button onclick="Display('5')">5</button>
+        <button onclick="Display('6')">6</button>
+        <button onclick="operation('-')" style="padding:15px 58px">-</button>
+        <button onclick="Clear('AC')" style="padding:13px 46px">AC</button>
+        <button onclick="Display('7')">7</button>
+        <button onclick="Display('8')">8</button>
+        <button onclick="Display('9')">9</button>
+        <button onclick="Display('*')">x</button>
+        <button onclick="operation('**')" style="padding:12px 53px">x<sup>y</sup></button>
+        <button onclick="operation('%')" style="padding:13px 51px">%</button>
+        <button onclick="Display('0')">0</button>
+        <button onclick="operation('.')" style="padding:15px 58px">.</button>
+        <button onclick="operation('/')" style="padding:15px 59px">/</button>
+        <button onclick="Equal('=')">=</button>
+    </div>
+    <script>
+        document.getElementById('Child').style.fontSize = '40px';
+        function Display(input) {
+            let data = document.getElementById('Child');
+            Child.value += input;
+        }
+        function operation(input) {
+            let data = document.getElementById('Child');
+            Child.value += input;
+        }
+        function Equal() {
+            let cal = document.getElementById('Child');
+            Child.value = eval(Child.value);
+        }
+        function Clear() {
+            Child.value = '';
+        }
+        function Clearr() {
+            Child.value = Child.value.slice(0, -1);
+        }
+    </script>
+</body>
+
+</html>
