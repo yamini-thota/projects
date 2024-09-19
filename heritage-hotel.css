@@ -1,0 +1,177 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#input {
+    padding: 0.2vw 1vw;
+    margin-top: 9px;
+}
+
+#search-icon {
+    font-size: 20px;
+    margin-left: -35px;
+}
+
+#sign-in-btn {
+    padding: 0px 20px;
+}
+
+.head-4 {
+    padding-top: 10px;
+}
+
+.selectopt {
+    background: orange;
+    margin: 20px 0px;
+    display: flex;
+}
+.selopt input {
+    padding: 2px 0px;
+}
+
+.container {
+    background-image: url('./3c44d2a73cec26a4a99db4b2198a642f73267ac7-1892x860_txiybp\ \(1\).jpg');
+    width: 100%;
+    background-size: cover;
+    border-image-repeat: no-repeat;
+}
+
+.head-2 {
+    padding-top: 150px;
+    font-size: 3.5vw;
+    color: white;
+}
+
+.head-1 {
+    font-size: 18px;
+    color: white;
+}
+
+.section {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 0px 0px 3px;
+    padding: 15px;
+    margin: 50px 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.locations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fig {
+    font-size: 20px;
+    text-align: center;
+}
+
+#footer {
+    text-decoration: underline;
+    color: white;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.img-div {
+    width: 90%;
+    text-align: center;
+    background-color: white;
+}
+
+.image {
+    margin: 25px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 0px 0px 3px;
+    border-radius: 20px;
+}
+#div-5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px;
+}
+.offer{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 0px 0px 3px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 790px) {
+    .head-4 {
+        display: none;
+    }
+
+    #input {
+        padding: 0.3vw 2vw;
+        margin-top: 10px;
+    }
+
+    button {
+        display: block;
+        justify-items: center;
+    }
+
+    .container {
+        font-size: 20px;
+    }
+
+    .head-1 {
+        font-size: 15px;
+    }
+
+    .selectopt {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin: 20px 0px; */
+        padding: 5px 10px;
+    }
+
+    .selectopt button {
+        padding: 0px 0px;
+    }
+
+    .selopt {
+        margin: 5px;
+    }
+
+    .selopt input {
+        padding: 5px;
+    }
+
+    .data-container {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .section {
+        margin: 10px;
+    }
+
+    .locations {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #images {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    #section-2 {
+        flex-wrap: wrap;
+    }
+    .offer{
+        font-size: 13px;
+    }
+    #div-5{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+}
